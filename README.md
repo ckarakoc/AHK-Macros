@@ -4,5 +4,5 @@
 [Superkey] + Scrollwheel for volume control.
 
 ## special_characters.ahk
-[ALT] + [sciou] = [şçıöü]
+[ALT] + [sciou] = [şçıöü] <br />
 [ALT] + [SHIFT] + [sciou] = [ŞÇİÖÜ]
