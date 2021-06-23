@@ -10,3 +10,7 @@
 ## special_characters.ahk
 [ALT] + [sciou] = [şçıöü] <br />
 [ALT] + [SHIFT] + [sciou] = [ŞÇİÖÜ]
+
+## windows.ahk
+[Superkey] + [f] = firefox
+[Superkey] + [c] = chrome
