@@ -7,6 +7,14 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 run firefox.exe
 return
 
+#+f::
+run firefox.exe -private-window
+return
+
 #c::
 run chrome.exe
+return
+
+#+c::
+run chrome.exe -incognito
 return

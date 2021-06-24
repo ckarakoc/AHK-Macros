@@ -14,3 +14,5 @@
 ## windows.ahk
 [Superkey] + [f] = firefox
 [Superkey] + [c] = chrome
+[Superkey] + [SHIFT] + [f] = firefox private window
+[Superkey] + [SHIFT] + [c] = chrome private window
