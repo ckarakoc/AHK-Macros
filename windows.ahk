@@ -8,7 +8,7 @@ run firefox.exe
 return
 
 #+f::
-run firefox.exe -private-window
+run firefox.exe -private
 return
 
 #c::
