@@ -12,7 +12,7 @@
 [ALT] + [SHIFT] + [sciou] = [ŞÇİÖÜ]
 
 ## windows.ahk
-[Superkey] + [f] = firefox
-[Superkey] + [c] = chrome
-[Superkey] + [SHIFT] + [f] = firefox private window
+[Superkey] + [f] = firefox <br />
+[Superkey] + [c] = chrome <br />
+[Superkey] + [SHIFT] + [f] = firefox private window <br />
 [Superkey] + [SHIFT] + [c] = chrome private window
