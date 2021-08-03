@@ -4,17 +4,21 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #f::
-run firefox.exe
-return
+	Run firefox.exe
+	Return
 
 #+f::
-run firefox.exe -private
-return
+	Run firefox.exe -private
+	Return
 
 #c::
-run chrome.exe
-return
+	Run chrome.exe
+	Return
 
 #+c::
-run chrome.exe -incognito
-return
+	Run chrome.exe -incognito
+	Return
+
+#n::
+	Run notepad++.exe
+	Return
