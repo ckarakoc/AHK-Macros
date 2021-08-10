@@ -5,6 +5,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #f::
 	Run firefox.exe
+	WinWait Mozilla Firefox
+	WinActivate
 	Return
 
 #+f::
