@@ -5,20 +5,30 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #f::
 	Run firefox.exe
-	WinWait Mozilla Firefox
-	WinActivate
+	WinWait, Mozilla Firefox,, 3
+	if WinExist("Mozilla Firefox")
+		WinActivate
 	Return
 
 #+f::
 	Run firefox.exe -private
+	WinWait, Mozilla Firefox,, 3
+	if WinExist("Mozilla Firefox")
+		WinActivate
 	Return
 
 #c::
 	Run chrome.exe
+	WinWait, New Tab - Google Chrome,, 3
+	if WinExist("New Tab - Google Chrome")
+		WinActivate
 	Return
 
 #+c::
-	Run chrome.exe -incognito
+	Run chrome.exe
+	WinWait, New Tab - Google Chrome,, 3
+	if WinExist("New Tab - Google Chrome")
+		WinActivate
 	Return
 
 #n::
@@ -33,6 +43,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 	IfWinActive, ahk_class CabinetWClass ; If explorer is active
 	{
 		path := GetActiveExplorerPath()
+		if (SubStr(path, 0) == "\") ; get last character
+			path .= "\" ; escape "\" 
+		path := StrReplace(path, ";", "\;") ; semicolon needs to be escaped
 		Run wt.exe -d "%path%"
 	}
 	else 
