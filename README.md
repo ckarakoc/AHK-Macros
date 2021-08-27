@@ -8,7 +8,8 @@
 
 ## special_characters.ahk
 [ALT] + [sciou] = [şçıöü] <br />
-[ALT] + [SHIFT] + [sciou] = [ŞÇİÖÜ]
+[ALT] + [SHIFT] + [sciou] = [ŞÇİÖÜ] <br />
+[ALT] + [5] = [€]
 
 ## windows.ahk
 [Superkey] + [f] = firefox <br />
