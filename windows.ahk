@@ -28,3 +28,29 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #m::
 	Run Mailbird.exe
 	Return
+	
+#t::
+	IfWinActive, ahk_class CabinetWClass ; If explorer is active
+	{
+		path := GetActiveExplorerPath()
+		Run wt.exe -d "%path%"
+	}
+	else 
+	{
+		Run wt.exe
+	}
+	Return
+	
+
+; https://www.autohotkey.com/boards/viewtopic.php?f=6&t=69925 | source: https://stackoverflow.com/questions/39253268/autohotkey-and-windows-10-how-to-get-current-explorer-path
+GetActiveExplorerPath() {
+    explorerHwnd := WinActive("ahk_class CabinetWClass")
+    if (explorerHwnd)
+    {
+        for window in ComObjCreate("Shell.Application").Windows
+        {
+            if (window.hwnd==explorerHwnd)
+                return window.Document.Folder.Self.Path
+        }
+    }
+}

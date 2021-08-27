@@ -14,6 +14,7 @@
 [Superkey] + [f] = firefox <br />
 [Superkey] + [c] = chrome <br />
 [Superkey] + [n] = notepad++ <br />
+[Superkey] + [t] = terminal <br />
 [Superkey] + [m] = mailbird mail client <br />
 [Superkey] + [SHIFT] + [f] = firefox private window <br />
 [Superkey] + [SHIFT] + [c] = chrome private window
@@ -22,4 +23,4 @@
 Don't forget to put the program executables (i.e. Firefox, Chrome, Notepad++, Mailbird etc...) into your Path Environment Variables in Windows. You could also put absolute paths inside the script file.
 
 # TODO
-- Windows Terminal functionality ([Superkey] + [t]) with open current window as well
+- Windows Terminal bug with opening C:\
