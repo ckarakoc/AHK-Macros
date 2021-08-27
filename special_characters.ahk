@@ -6,77 +6,58 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; LOWERCASE LETTERS
 
 !c::
-{
-SendInput {ç}
-}
-return
+	SendInput {ç}
+	Return
 
 !g::
-{
-SendInput {ğ}
-}
-return
+	SendInput {ğ}
+	Return
 
 !i::
-{
-SendInput {ı}
-}
-return
+	SendInput {ı}
+	Return
 
 !o::
-{
-SendInput {ö}
-}
-return
+	SendInput {ö}
+	Return
 
 !s::
-{
-SendInput {ş}
-}
-return
+	SendInput {ş}
+	Return
 
 !u::
-{
-SendInput {ü}
-}
-return
+	SendInput {ü}
+	Return
 
 ; ------------------------------------------------------------------------------------------------------------
 ; UPPERCASE LETTERS
 
 !+c::
-{
-SendInput {Ç}
-}
-return
+	SendInput {Ç}
+	Return
 
 !+g::
-{
-SendInput {Ğ}
-}
-return
+	SendInput {Ğ}
+	Return
 
 !+i::
-{
-SendInput {İ}
-}
-return
+	SendInput {İ}
+	Return
 
 !+o::
-{
-SendInput {Ö}
-}
-return
+	SendInput {Ö}
+	Return
 
 !+s::
-{
-SendInput {Ş}
-}
-return
+	SendInput {Ş}
+	Return
 
 !+u::
-{
-SendInput {Ü}
-}
-return
+	SendInput {Ü}
+	Return
 
+; ------------------------------------------------------------------------------------------------------------
+; SYMBOLS
+!5::
+	SendInput {€}
+	Return
