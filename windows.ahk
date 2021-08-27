@@ -24,3 +24,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #n::
 	Run notepad++.exe
 	Return
+	
+#m::
+	Run Mailbird.exe
+	Return
