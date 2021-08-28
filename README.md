@@ -20,8 +20,5 @@
 [Superkey] + [SHIFT] + [f] = firefox private window <br />
 [Superkey] + [SHIFT] + [c] = chrome private window
 
-### Note
-Don't forget to put the program executables (i.e. Firefox, Chrome, Notepad++, Mailbird etc...) into your Path Environment Variables in Windows. You could also put absolute paths inside the script file instead.
-
 # TODO
 :heavy_check_mark:
