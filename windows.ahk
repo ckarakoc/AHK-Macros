@@ -3,6 +3,20 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+#b::
+	Run "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
+	WinWait, Brave,, 3
+	if WinExist("Brave")
+		WinActivate
+	Return
+
+#+b::
+	Run "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --incognito
+	WinWait, Brave,, 3
+	if WinExist("Brave")
+		WinActivate
+	Return
+
 #f::
 	Run firefox.exe
 	WinWait, Mozilla Firefox,, 3
